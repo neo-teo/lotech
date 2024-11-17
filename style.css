@@ -31,6 +31,10 @@ footer {
     padding-bottom: 20px;
 }
 
+img {
+    max-width: 100%;
+}
+
 nav a {
     color: blue;
     display: inline-block;

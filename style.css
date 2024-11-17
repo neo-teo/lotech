@@ -1,0 +1,44 @@
+body {
+    background-color: #FFFAE8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 100vh;
+}
+
+p {
+    max-width: 500px;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.bottle {
+    max-width: 300px;
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: blue;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+
+nav a.active,
+nav a:hover {
+    font-style: italic;
+}

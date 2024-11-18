@@ -14,15 +14,10 @@
     <nav>
         <a href="index.html">index.html</a>
         <a href="about.html" class="active">about</a>
-        <a href="works.html">works</a>
     </nav>
 
-    <h1>
-        Teo Tsivranidis
-    </h1>
-
     <p>
-        I am a developer and designer interested in bringing elements from the real world into the world wide web.
+        I am a web developer and designer interested in bringing human and handmade elements into the world wide web.
     </p>
     <p>
         Recent themes:
@@ -30,21 +25,33 @@
             organic forms in technology, lightweight systems, impermanent tech, imperfect tech.</i>
     </p>
 
+    <p style="font-size: small">
+        &copy; Teo Tsivranidis 2024
+    </p>
     <img class="bottle" src="assets/images/bottle.gif" />
 
-    <p>tech should slow down on a hot summer day</p>
-    <p>a site that isn't used should collect dust</p>
-    <p>a task that's not completed in due time should fade</p>
-    <p>pixels should wear and tear</p>
+    <p style="text-align: center; line-height: 2">
+        tech should slow down on a hot summer day
+        <br />
+        a site that isn't used should collect dust
+        <br />
+        a task that's not completed in due time should fade
+        <br />
+        pixels should wear and tear
+    </p>
 
-    <p>expose your method</p>
-    <p>break routine, do not repeat</p>
-    <p>a silly activity once is special</p>
-    <p>a silly activity a hundred times is silly</p>
-    <p>move things around in your home</p>
+    <p style="text-align: center; line-height: 2">
+        expose your method
+        <br />
+        break routine, do not repeat
+        <br />
+        a silly activity once is special
+        <br />
+        a silly activity a hundred times is silly
+    </p>
+
+    <p style="font-size: smaller">(circa 2007 honda jazz)</p>
     <img src="assets/images/jazz.png" alt="2007 honda jazz" />
-    <p><i>(circa 2007 honda jazz)</i></p>
-
 
     <footer>
         <p>
@@ -67,10 +74,24 @@
                 time();
                 setInterval(time, 1000);
             </script>
+            and
+            <span id="weather">...</span>
+            <script>
+                async function fetchWeather() {
+                    const response = await fetch('https://wttr.in/New+York?format=%t');
+                    const temperature = await response.text();
+                    document.getElementById('weather').textContent = `${temperature}`;
+                }
+
+                fetchWeather();
+            </script>
         </p>
 
         <p>
-            ευχαριστώ πολύ πολύ
+            <i>
+
+                ευχαριστώ πολύ πολύ
+            </i>
         </p>
     </footer>
 </body>

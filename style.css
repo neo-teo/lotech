@@ -47,3 +47,44 @@ nav a.active,
 nav a:hover {
     font-style: italic;
 }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+li a:hover {
+    font-style: italic;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.keywords {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: end;
+}
+
+.keyword {
+    font-family: monospace;
+    font-size: small;
+}
+
+
+.work-image {
+    max-width: 100px;
+}

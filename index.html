@@ -16,47 +16,17 @@
         <a href="about.html">about</a>
     </nav>
 
-    <img class="bottle" src="assets/images/jazz.png" />
+    <ul id="works"></ul>
 
-    <footer>
-        <p>
-            <span>i'm currently in new york city, where it is</span>
-            <span id="clock"></span>
-            <script>
-                var span = document.getElementById('clock');
-                function time() {
-                    var options = {
-                        timeZone: 'America/New_York',
-                        hour12: false,
-                        hour: '2-digit',
-                        minute: '2-digit',
-                        second: '2-digit'
-                    };
+    <script src="works.js"></script>
+    <script>
+        renderWorks();
+    </script>
 
-                    span.textContent = new Intl.DateTimeFormat('en-US', options)
-                        .format(new Date());
-                }
-                time();
-                setInterval(time, 1000);
-            </script>
-            and
-            <span id="weather">____</span>
-            <script>
-                async function fetchWeather() {
-                    const response = await fetch('https://wttr.in/New+York?format=%t');
-                    const temperature = await response.text();
-                    document.getElementById('weather').textContent = `${temperature}`;
-                }
-
-                fetchWeather();
-            </script>
-            <br /><br />
-            <i>
-
-                ευχαριστώ πολύ πολύ
-            </i>
-        </p>
-    </footer>
+    <script src="footer.js"></script>
+    <script>
+        loadFooter();
+    </script>
 </body>
 
 </html>

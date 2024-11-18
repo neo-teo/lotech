@@ -85,6 +85,10 @@ h3 {
 }
 
 
+li a:hover .work-image {
+    transform: scale(2.5);
+}
+
 .work-image {
     max-width: 100px;
 }

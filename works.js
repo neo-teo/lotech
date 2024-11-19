@@ -21,7 +21,7 @@ const works = [
         title: "sobu",
         image: "assets/images/works/sobu.gif",
         keywords: ["p5.js", "world", "figma / photoshop"],
-        link: "https://play.teo.fyi/sobu",
+        link: "https://sobu.teo.fyi",
     },
     {
         title: "liquids",

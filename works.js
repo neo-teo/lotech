@@ -6,9 +6,9 @@ const works = [
         link: "https://play.teo.fyi/pygif",
     },
     {
-        title: "impermanence",
+        title: "break it",
         image: "assets/images/works/impermanence.gif",
-        keywords: ["p5.js", "tool"],
+        keywords: ["html / js / css", "tool"],
         link: "https://play.teo.fyi/impermanence",
     },
     {

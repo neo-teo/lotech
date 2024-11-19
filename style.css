@@ -5,26 +5,82 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    max-width: 100vw
 }
 
 p {
     max-width: calc(min(500px, 80%));
 }
 
+.header {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (max-width: 700px) {
+        position: relative;
+        width: calc(100vw - 20px);
+        padding-bottom: 40px;
+    }
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 nav {
     display: flex;
-    gap: 100px;
-    font-size: large;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: larger;
+
+    @media (max-width: 700px) {
+        flex-direction: row;
+    }
+}
+
+nav a {
+    color: blue;
+    width: fit-content;
+}
+
+.socials a {
+    color: blue;
+    width: fit-content;
+
+    @media (max-width: 700px) {
+        display: none;
+    }
+}
+
+a.active,
+a:hover {
+    font-style: italic;
 }
 
 footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    text-align: center;
+    z-index: 0;
+
+    gap: 15px;
+
+    @media (max-width: 700px) {
+        position: relative;
+        width: calc(100vw - 20px);
+        padding-top: 60px;
+    }
 }
 
 .bottle {
@@ -36,22 +92,15 @@ img {
     max-width: 100%;
 }
 
-nav a {
-    color: blue;
-    display: inline-block;
-    min-width: 100px;
-    text-align: center;
-}
-
-nav a.active,
-nav a:hover {
-    font-style: italic;
-}
-
 ul {
+    padding: 0;
+    padding-inline: 0;
+    margin-inline: 0;
+    max-width: calc(min(500px, 80%));
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 li a {
@@ -59,8 +108,7 @@ li a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 10px;
+    gap: 20px;
 }
 
 li a:hover {
@@ -70,18 +118,24 @@ li a:hover {
 h3 {
     font-size: 3rem;
     font-weight: normal;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 700px) {
+        font-size: 2rem;
+    }
 }
 
 .keywords {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     justify-content: end;
 }
 
 .keyword {
     font-family: monospace;
-    font-size: small;
+    font-size: smaller;
 }
 
 
@@ -91,4 +145,8 @@ li a:hover .work-image {
 
 .work-image {
     max-width: 100px;
+
+    @media (max-width: 700px) {
+        max-width: 75px;
+    }
 }

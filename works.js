@@ -1,5 +1,12 @@
 const works = [
     {
+        title: "pip",
+        image: "assets/images/works/pip.gif",
+        link: "https://pip.teo.fyi",
+        description: ["A web exploration experiment."],
+        keywords: ["web"],
+    },
+    {
         title: "bathwall",
         image: "assets/images/works/bathwall.png",
         link: "https://bathwall.co",

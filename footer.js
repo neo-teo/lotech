@@ -32,7 +32,7 @@ async function loadFooter() {
 
     // Initialize weather
     async function fetchWeather() {
-        const response = await fetch('https://wttr.in/New+York?format=%t');
+        const response = await fetch('https://wttr.in/new+york?m&format=%t');
         const temperature = await response.text();
         document.getElementById('weather').textContent = `${temperature}`;
     }

@@ -78,9 +78,11 @@ nav {
 
 .socials a:hover::after {
     content: "🔗";
+    font-size: smaller;
     font-style: normal;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-top: 1px;
 }
 
 nav a.active,

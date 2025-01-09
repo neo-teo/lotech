@@ -1,25 +1,17 @@
 const works = [
     {
+        title: "bathwall",
+        image: "assets/images/works/bathwall.png",
+        link: "https://bathwall.co",
+        description: ["A guest book for cafes and bars."],
+        keywords: ["fullstack"],
+    },
+    {
         title: "pip",
         image: "assets/images/works/pip.gif",
         link: "https://pip.teo.fyi",
         description: ["A web exploration experiment."],
         keywords: ["web"],
-    },
-    {
-        title: "bathwall",
-        image: "assets/images/works/bathwall.png",
-        link: "https://bathwall.co",
-        description: ["An online guest book for bars.", "Revisiting this soon for a rebrand."],
-        keywords: ["fullstack"],
-
-    },
-    {
-        title: "ps2 nostalgia",
-        image: "assets/images/works/ps2.png",
-        link: "https://ps2nostalgia.win",
-        description: ["A generative tool that turns images into nostalgic playstation 2 graphics.", "Special thanks to my friend Teddy."],
-        keywords: ["fullstack"],
     },
     {
         title: "break it",
@@ -55,6 +47,13 @@ const works = [
         link: "https://sobu.teo.fyi",
         description: ["A browser game to commemorate my move in NYC in July 2024."],
         keywords: ["web", "design", "asset creation"],
+    },
+    {
+        title: "ps2 nostalgia",
+        image: "assets/images/works/ps2.png",
+        link: "https://ps2nostalgia.win",
+        description: ["A generative tool that turns images into nostalgic playstation 2 graphics.", "Special thanks to my friend Teddy."],
+        keywords: ["fullstack"],
     },
     {
         title: "drinks",

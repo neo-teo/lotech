@@ -17,7 +17,7 @@ const works = [
         title: "break it",
         image: "assets/images/works/impermanence.gif",
         link: "https://play.teo.fyi/impermanence",
-        description: ["An interactive reader with selected excerpts on nature and technology."],
+        description: ["An interactive reader."],
         keywords: ["web"],
     },
     {

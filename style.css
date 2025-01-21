@@ -5,7 +5,7 @@ body {
 
 body {
     /* font-family: sans-serif; */
-    background-color: #f6f6f6;
+    background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
@@ -72,14 +72,13 @@ nav {
     }
 }
 
-.socials a:hover {
+/* .socials a:hover {
     font-style: italic;
-}
+} */
 
 .socials a:hover::after {
     content: "🔗";
-    font-size: smaller;
-    font-style: normal;
+    /* font-style: normal; */
     position: absolute;
     margin-left: 5px;
     margin-top: 1px;
@@ -118,6 +117,12 @@ footer {
 
         text-align: center;
     }
+}
+
+footer .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 footer .right {

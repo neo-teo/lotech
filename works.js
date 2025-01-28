@@ -32,7 +32,7 @@ const works = [
         image: "assets/images/works/boys.gif",
         link: "https://play.teo.fyi/riso",
         description: ["An image slideshow script made using the p5.riso library."],
-        keywords: ["web", "pixel mask"],
+        keywords: ["pixel mask"],
     },
     {
         title: "coins",
@@ -46,7 +46,7 @@ const works = [
         image: "assets/images/works/sobu.gif",
         link: "https://sobu.teo.fyi",
         description: ["A browser game to commemorate my move in NYC in July 2024."],
-        keywords: ["web", "design", "asset creation"],
+        keywords: ["web", "design"],
     },
     {
         title: "ps2 nostalgia",
@@ -60,14 +60,14 @@ const works = [
         image: "assets/images/works/liquids.gif",
         link: "https://play.teo.fyi/liquids",
         description: ["A data profile of the drinks I consumed during the week of October 11-17, 2024."],
-        keywords: ["web", "sketch", "data driven"],
+        keywords: ["web", "data driven"],
     },
     {
         title: "jellyfish",
         image: "assets/images/works/jellies.gif",
         link: "https://play.teo.fyi/jellyfish",
         description: ["An animated wallpaper.", "Fallout from drinks -- thought the circles layered on top of each other looked like jellyfish."],
-        keywords: ["web", "sketch"],
+        keywords: ["sketch"],
     },
     {
         title: "cipher",
@@ -83,7 +83,7 @@ const works = [
         keywords: ["p5.js", "world"],
         link: "https://play.teo.fyi/willump",
         description: ["Part rabbit, part dogo, part human.", "Willump was made fully out of primitive shapes on p5.js."],
-        keywords: ["web", "sketch"],
+        keywords: ["sketch"],
     },
     {
         title: "routine",
@@ -99,7 +99,7 @@ const works = [
         keywords: ["p5.js", "world"],
         link: "https://play.teo.fyi/face",
         description: ["A game I suppose ? Not exactly sure to be honest."],
-        keywords: ["sketch"],
+        keywords: ["web"],
     },
 ];
 

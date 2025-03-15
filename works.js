@@ -7,70 +7,7 @@ const works = [
         keywords: ["fullstack"],
     },
     {
-        title: "pip",
-        image: "assets/images/works/pip.gif",
-        link: "https://pip.teo.fyi",
-        description: ["A web exploration experiment."],
-        keywords: ["web"],
-    },
-    {
-        title: "break it",
-        image: "assets/images/works/impermanence.gif",
-        link: "https://play.teo.fyi/impermanence",
-        description: ["An interactive reader."],
-        keywords: ["web"],
-    },
-    {
-        title: "pygif",
-        image: "assets/images/works/bike.gif",
-        link: "https://play.teo.fyi/pygif",
-        description: ["An image segmentation script that converts videos to pixelated GIFs."],
-        keywords: ["script", "pixel mask"],
-    },
-    {
-        title: "riso",
-        image: "assets/images/works/boys.gif",
-        link: "https://play.teo.fyi/riso",
-        description: ["An image slideshow script made using the p5.riso library."],
-        keywords: ["pixel mask"],
-    },
-    {
-        title: "coins",
-        image: "assets/images/works/coins.gif",
-        link: "https://play.teo.fyi/coins",
-        description: ["A clustering algorithm to iteratively create and visualize two separate populations.", "Plan is to use this to visualize tweets on polarizing topics on X."],
-        keywords: ["web", "pixel mask"],
-    },
-    {
-        title: "sobu",
-        image: "assets/images/works/sobu.gif",
-        link: "https://sobu.teo.fyi",
-        description: ["A browser game to commemorate my move in NYC in July 2024."],
-        keywords: ["web", "design"],
-    },
-    {
-        title: "ps2 nostalgia",
-        image: "assets/images/works/ps2.png",
-        link: "https://ps2nostalgia.win",
-        description: ["A generative tool that turns images into nostalgic playstation 2 graphics.", "Special thanks to my friend Teddy."],
-        keywords: ["fullstack"],
-    },
-    {
-        title: "drinks",
-        image: "assets/images/works/liquids.gif",
-        link: "https://play.teo.fyi/liquids",
-        description: ["A data profile of the drinks I consumed during the week of October 11-17, 2024."],
-        keywords: ["web", "data driven"],
-    },
-    {
-        title: "jellyfish",
-        image: "assets/images/works/jellies.gif",
-        link: "https://play.teo.fyi/jellyfish",
-        description: ["An animated wallpaper.", "Fallout from drinks -- thought the circles layered on top of each other looked like jellyfish."],
-        keywords: ["sketch"],
-    },
-    {
-        title: "cipher",
+        title: "secrets are best kept",
         image: "assets/images/works/cipher.gif",
         keywords: ["html / js / css", "tool"],
         link: "https://play.teo.fyi/cipher",
@@ -78,23 +15,63 @@ const works = [
         keywords: ["web"],
     },
     {
-        title: "willump",
-        image: "assets/images/works/willump.gif",
-        keywords: ["p5.js", "world"],
-        link: "https://play.teo.fyi/willump",
-        description: ["Part rabbit, part dogo, part human.", "Willump was made fully out of primitive shapes on p5.js."],
-        keywords: ["sketch"],
+        title: "friends on riso",
+        image: "assets/images/works/boys.gif",
+        link: "https://play.teo.fyi/riso",
+        description: ["An image slideshow script made using the p5.riso library."],
+        keywords: ["pixel mask"],
     },
     {
-        title: "routine",
-        image: "assets/images/works/routine.gif",
-        keywords: ["html / js / css", "illustrator"],
-        link: "https://play.teo.fyi/routine",
-        description: ["Illustrator text effect and css animation exercise."],
-        keywords: ["sketch"],
+        title: "ice break mints",
+        image: "assets/images/works/impermanence.gif",
+        link: "https://play.teo.fyi/impermanence",
+        description: ["An interactive reader."],
+        keywords: ["web"],
     },
     {
-        title: "face",
+        title: "byjohns be byjohns",
+        image: "assets/images/works/bike.gif",
+        link: "https://play.teo.fyi/pygif",
+        description: ["A script that converts video to dithered gif. Inspired by the art of John Provencher."],
+        keywords: ["script", "pixel mask"],
+    },
+    {
+        title: "ps2 nostalgia",
+        image: "assets/images/works/ps2.png",
+        link: "https://ps2nostalgia.win",
+        description: ["While trying to figure out how to hop on to the playstation graphics trend that was floating around, I built a tool that let people do it.", "Special thanks to my friend Teddy."],
+        keywords: ["fullstack"],
+    },
+    {
+        title: "populations",
+        image: "assets/images/works/coins.gif",
+        link: "https://play.teo.fyi/coins",
+        description: ["A clustering algorithm to iteratively create and visualize two separate populations.", "Plan is to use this to visualize tweets on polarizing topics on X."],
+        keywords: ["web", "pixel mask"],
+    },
+    {
+        title: "internet pip",
+        image: "assets/images/works/pip.gif",
+        link: "https://pip.teo.fyi",
+        description: ["A web exploration experiment."],
+        keywords: ["web"],
+    },
+    {
+        title: "sobu moving co",
+        image: "assets/images/works/sobu.gif",
+        link: "https://sobu.teo.fyi",
+        description: ["A browser game to commemorate my move in NYC in July 2024."],
+        keywords: ["web", "design"],
+    },
+    {
+        title: "liquid assets",
+        image: "assets/images/works/liquids.gif",
+        link: "https://play.teo.fyi/liquids",
+        description: ["A data profile of the drinks I consumed during the week of October 11-17, 2024."],
+        keywords: ["web", "data driven"],
+    },
+    {
+        title: "sometimes ... ",
         image: "assets/images/works/face.gif",
         keywords: ["p5.js", "world"],
         link: "https://play.teo.fyi/face",
@@ -163,13 +140,9 @@ function renderWorks(filter = 'all') {
         const li = document.createElement('li');
         li.className = 'work-item';
 
-        // Generate random rotation between -5 and 5 degrees
-        const randomRotation = -Math.random() * 10 + Math.random() * 10;
-        // const randomRotation = 0;
-
         li.innerHTML = `
         <a href="${project.link}">
-            <h3 style="transform: rotate(${randomRotation}deg)">${project.title}</h3>
+            <h3>${project.title}</h3>
 
             <img src="${project.image}" alt="${project.title}" class="work-image">
             

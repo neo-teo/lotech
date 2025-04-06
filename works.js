@@ -64,13 +64,6 @@ const works = [
         keywords: ["web", "design"],
     },
     {
-        title: "liquid assets",
-        image: "assets/images/works/liquids.gif",
-        link: "https://play.teo.fyi/liquids",
-        description: ["A data profile of the drinks I consumed during the week of October 11-17, 2024."],
-        keywords: ["web", "data driven"],
-    },
-    {
         title: "sometimes ... ",
         image: "assets/images/works/face.gif",
         keywords: ["p5.js", "world"],
